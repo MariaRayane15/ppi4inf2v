@@ -1,5 +1,6 @@
 import "./styles/theme.css";
 import "./styles/global.css";
+import { MyText } from "./components/MyText";
 
 export default function App() {
   return (
@@ -9,6 +10,8 @@ export default function App() {
         Quod quas error aliquam eligendi sit in est, a repellendus cupiditate. 
         Atque sunt quam culpa inventore dolor dolorum neque suscipit reprehenderit nihil!</p>
     </div>
+
+    
   );
 }
 
