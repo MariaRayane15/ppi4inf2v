@@ -1,23 +1,23 @@
-.container{
+.container {
     margin: 0 auto;
     max-width: 80rem;
 }
 
-. div{
-    background-color: var(--mint-green);
-    color: var();
-    box-shadow: 0 0 1rem var();
-    padding: 3 rem;
+.div {
+    background-color: var(--primary-light);
+    color: var(--primary-contrast-dark);
+    box-shadow: 0 0 1rem var(--gray-900);
+    padding: 3rem;
     margin: 3rem 5rem;
     border-radius: 2rem;
 }
 
-. {
+.title {
     font-weight: bolder;
     font-size: 4rem;
-    color: var()
+    color: var(--primary-dark);
     text-align: center;
-    margin-botton: 2rem;
+    margin-bottom: 2rem;
 }
 
 .text {
