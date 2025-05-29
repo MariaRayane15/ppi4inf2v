@@ -1,6 +1,5 @@
-import "./styles/theme.css";
-import "./styles/global.css";
-import { MyTextList } from "./components/MyTextList";
+import styles from "./MyTextList.module.css";
+import { MyText } from "./MyText";
 
 export default function App() {
   const texts = [
@@ -13,7 +12,7 @@ export default function App() {
 
   return (
     // React Fragment
-     <>
+     <div className={styles.container}>
       {texts.map((text, index) => {
         return (
           <MyText key={index} title={`${text.title} ${index + 1}`}>

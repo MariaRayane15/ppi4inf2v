@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    /*Eixo Horizontal*/
+    justify-content: center; /*space-evenly*/
+
+    /*Eixo Vertical*/
+    align-items: center;
+
+    align-content: center;
+}
+
+
