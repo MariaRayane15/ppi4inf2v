@@ -1,8 +1,9 @@
 import styles from "./MyTextList.module.css";
 import { MyText } from "./MyText";
 
-export default function App() {
+export function MyTextList() {
   const texts = [
+    { title: "Meu título", text: "Meu texto" },
     { title: "Meu título", text: "Meu texto" },
     { title: "Meu título", text: "Meu texto" },
     { title: "Meu título", text: "Meu texto" },
@@ -11,8 +12,7 @@ export default function App() {
   ];
 
   return (
-    // React Fragment
-     <div className={styles.container}>
+    <div className={styles.container}>
       {texts.map((text, index) => {
         return (
           <MyText key={index} title={`${text.title} ${index + 1}`}>
@@ -20,6 +20,6 @@ export default function App() {
           </MyText>
         );
       })}
-    </>
+    </div>
   );
 }
