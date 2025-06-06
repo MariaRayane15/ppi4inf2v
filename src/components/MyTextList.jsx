@@ -1,4 +1,4 @@
-import styles from "./MyTextList.module.css";More actions
+import styles from "./MyTextList.module.css";
 import { MyText } from "./MyText";
 
 export function MyTextList() {
