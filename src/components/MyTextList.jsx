@@ -1,4 +1,4 @@
-import styles from "./MyTextList.module.css";
+import styles from "./MyTextList.module.css";More actions
 import { MyText } from "./MyText";
 
 export function MyTextList() {
@@ -12,14 +12,17 @@ export function MyTextList() {
   ];
 
   return (
-    <div className={styles.container}>
-      {texts.map((text, index) => {
-        return (
-          <MyText key={index} title={`${text.title} ${index + 1}`}>
-            {text.text}
-          </MyText>
-        );
-      })}
-    </div>
+    <>
+      <h1 className={styles.title}>Lista de Textos</h1>
+      <div className={styles.container}>
+        {texts.map((text, index) => {
+          return (
+            <MyText key={index} title={`${text.title} ${index + 1}`}>
+              {text.text}
+            </MyText>
+          );
+        })}
+      </div>
+    </>
   );
 }
