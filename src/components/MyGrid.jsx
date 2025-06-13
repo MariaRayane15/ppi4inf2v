@@ -3,8 +3,8 @@ import styles from "./MyGrid.module.css";
 export function MyGrid() {
   return (
     <div className={styles.container}>
-      <header className={styles.header1} />
-      <div className={styles.header1}>
+      <header className={styles.header} />
+      <div className={styles.header}>
         <h1>Foco, Força e Fé</h1>
       </div>
       <main className={styles.main}>
@@ -36,6 +36,11 @@ export function MyGrid() {
         </div>
       </main>
       <footer className={styles.footer} />
+      <div className={styles.footer}>
+        <h3>IFRN - Campus Macau</h3>
+        <h3>Curso Técnico em Informática</h3>
+        <h3>Programação para Internet 2025</h3>
+      </div>
     </div>
   );
 }

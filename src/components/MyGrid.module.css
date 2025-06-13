@@ -2,37 +2,40 @@
   display: grid;
   grid-template-columns: 30rem auto 30rem;
   grid-template-areas:
-    "header1 header1 header1"
+    "header header header"
     "main main main"
     "footer footer footer";
 
-  grid-template-rows: 10rem 5rem calc(100vh - 25rem) 5rem 10rem;
+  grid-template-rows: 10rem auto 5rem;
+  height: 100vh;
 
   @media (max-width: 1200px) {
     grid-template-areas:
-      "header1"
+      "header"
       "main"
       "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 5rem auto 5rem 10rem;
+    grid-template-rows: 10rem auto 5rem;
   }
 }
 
-.header1 {
-  grid-area: header1;
-  background-color: rgb(194, 57, 110);
+.header {
+  grid-area: header;
+  background-color: #00043f;
   font-size: large;
   text-align: center;
 }
 
-.footer {
-  grid-area: footer;
-  background-color: rgb(175, 21, 137);
-  
+.header h1 {
+  color:  #0b36c2; 
 }
 
-
+.footer {
+  grid-area: footer;
+  background-color: #ffffff;
+  
+}
 
 
 .grid {
