@@ -1,41 +1,58 @@
 .container {
   display: grid;
+
   grid-template-columns: 30rem auto 30rem;
   grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header1 header1 header1"
+    "aside header2 aside2"
+    "aside main aside2"
+    "aside footer2 aside2"
+    "footer footer aside2";
 
-  grid-template-rows: 10rem auto 5rem;
-  height: 100vh;
+  grid-template-rows: 10rem 5rem calc(100vh - 25rem) 5rem 10rem;
 
   @media (max-width: 1200px) {
     grid-template-areas:
-      "header"
+      "header1"
+      "header2"
       "main"
+      "footer2"
       "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem auto 5rem;
+    grid-template-rows: 10rem 5rem auto 5rem 10rem;
   }
 }
 
-.header {
-  grid-area: header;
-  background-color: #00043f;
-  font-size: large;
-  text-align: center;
+.header1 {
+  grid-area: header1;
+  background-color: rgb(200, 0, 27);
 }
 
-.header h1 {
-  color:  #0b36c2; 
+.header2 {
+  grid-area: header2;
+  background-color: rgb(20, 67, 255);
+}
+
+.aside {
+  grid-area: aside;
+  background-color: rgb(198, 207, 30);
+}
+.aside2 {
+  grid-area: aside2;
+  background-color: rgb(198, 207, 30);
 }
 
 .footer {
   grid-area: footer;
-  background-color: #ffffff;
-  
+  background-color: rgb(216, 121, 214);
 }
+
+.footer2 {
+  grid-area: footer2;
+  background-color: rgb(6, 129, 31);
+}
+
 
 
 .grid {
@@ -56,7 +73,7 @@
   color: var(--primary-contrast-light);
   padding: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  font-size: 1.75rem;
+  font-size: 3rem;
   text-align: center;
   height: 20rem;
 }
