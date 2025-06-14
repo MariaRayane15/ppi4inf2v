@@ -24,7 +24,7 @@
   font-size: 2rem;
   width: 2em;
   height: 2em;
-  color: #880e4f;;
+  color: #880e4f;
 }
 
 @media (max-width: 1200px) {
@@ -62,7 +62,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  color: #4a0033;;
+  color: #4a0033;
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;

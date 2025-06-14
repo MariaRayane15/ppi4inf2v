@@ -12,7 +12,7 @@ export function Footer() {
             <h1>Programação para Internet 2025</h1>
           </div>
           <div>
-            <p>Maria Rayane do Nascimento Miranda</p>
+            <p>Maria Rayane Nascimento Miranda</p>
           </div>
           <div className={styles.icons}>
             <a href="https://github.com/MariaRayane15/ppi4inf2v" target="_blank">
