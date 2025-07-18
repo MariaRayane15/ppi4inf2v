@@ -17,7 +17,7 @@ export function ProductList({ addToCart }) {
       try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-
+        
         setProducts(data.products);
       } catch (error) {
         setError(error);
@@ -27,11 +27,10 @@ export function ProductList({ addToCart }) {
     }
     setTimeout(() => {
       fetchProducts();
-    }, 2000);
+    }, 100);
   }, []);
   return (
     <div className={styles.container}>
-      
       <div className={styles.grid}>
         {products.map((product) => (
           <Product key={product.id} product={product} addToCart={addToCart} />
@@ -53,4 +52,4 @@ export function ProductList({ addToCart }) {
       {error && <p>Error loading products: {error.message}</p>}
     </div>
   );
-}
+  }
